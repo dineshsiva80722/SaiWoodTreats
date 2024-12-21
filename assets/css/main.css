@@ -213,6 +213,7 @@ h6 {
     order: 2;
     margin: 0 15px 0 0;
     display: flex;
+    font-size: 12px;
     padding: 6px 15px;
     width: 120px;
   }
@@ -894,8 +895,9 @@ section,
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
 }
+
 .hero .Plywood {
-  background-image: url('../img/saiwoods/Galary/plywood.jpg');
+  background-image: url('../img/saiwoods/Galary/PXL_20241203_121511879.jpg');
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   width: 200px;
@@ -906,7 +908,7 @@ section,
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   width: 200px;
-  
+
 }
 
 .hero .icon-box {
@@ -993,7 +995,7 @@ section,
 @media (max-width: 768px) {
   .services-card {
     width: 100%;
-    
+
   }
 }
 
@@ -1068,7 +1070,7 @@ section,
 --------------------------------------------------------------*/
 
 .clients {
-  padding: 50px 0;
+  padding-top: 100px;
 }
 
 .clients .swiper-slide img {
@@ -1145,6 +1147,7 @@ section,
 .services {
   margin: 100px 0px;
 }
+
 
 .services .service-item {
   background-color: var(--surface-color);
@@ -1259,11 +1262,63 @@ section,
 # Portfolio Section
 --------------------------------------------------------------*/
 
+  /* Ensure items are displayed in rows */
+   .portfolio-grid { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+  } 
+
+  .portfolio-item {
+    flex: 1 1 calc(25% - 15px); /* 4 items per row with gap */
+    box-sizing: border-box;
+    position: relative;
+     /* Fixed height for div, you can adjust */
+    overflow: hidden;
+   } 
+
+  .portfolio-item img {
+    width: 100%; /* Makes the image take full width of the container */
+    height: 100%; /* Makes the image take full height of the container */
+    object-fit: cover; 
+  }
+
+  @media (max-width: 992px) {
+    .portfolio-item {
+      flex: 1 1 calc(33.333% - 15px); /* 3 items per row on tablets */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .portfolio-item {
+      flex: 1 1 calc(50% - 15px); /* 2 items per row on mobile */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .portfolio-item {
+      flex: 1 1 100%; /* 1 item per row on small screens */
+    }
+  }
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
+}
+
+.portfolio {
+  margin: 0px 0px;
+  z-index: -10;
+  min-height: 100vh;
+
+}
+
+.port-img {
+  display: flex;
+
 }
 
 .portfolio .portfolio-filters li {
@@ -1295,10 +1350,13 @@ section,
   .portfolio .portfolio-filters li {
     font-size: 14px;
     margin: 0 5px;
+    height: 300px;
   }
 }
 
+
 .portfolio .portfolio-content {
+  
   position: relative;
   overflow: hidden;
 }
@@ -1341,7 +1399,7 @@ section,
 .portfolio .portfolio-content .portfolio-info .preview-link,
 .portfolio .portfolio-content .portfolio-info .details-link {
   position: absolute;
-  left: calc(50% - 40px);
+  left: calc(60% - 40px);
   font-size: 26px;
   top: calc(50% - 14px);
   color: #fff;
@@ -1368,15 +1426,15 @@ section,
   transform: scale(1.1);
 }
 
-.profolio-container{
- 
-}
 
 .Galarybtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0px;
+  height: 15pc;
+  margin-top: 0px;
+  z-index: 10;
+
 }
 
 /* From Uiverse.io by cssbuttons-io */
@@ -1699,7 +1757,7 @@ button:hover .button-text {
 }
 
 .contact {
-  margin: 100px 0;
+  margin-top: 70px;
 }
 
 .contact .info-item i {
@@ -1888,7 +1946,7 @@ button:hover .button-text {
 
 .service-details .services-list a:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-  color: var(--accent-color);
+ cursor: pointer;
 }
 
 .service-details .download-catalog a {
@@ -1924,6 +1982,7 @@ button:hover .button-text {
   color: var(--contrast-color);
   margin-top: 30px;
   padding: 30px 15px;
+  cursor: pointer;
 }
 
 .service-details .help-box .help-icon {
@@ -1966,9 +2025,10 @@ button:hover .button-text {
   color: var(--accent-color);
 }
 
+i {
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
