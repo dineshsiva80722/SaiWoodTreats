@@ -102,23 +102,26 @@
       <div class="container-fluid">
         <div class="profolio-container isotope-layout" data-default-filter="*" data-layout="masonry"
           data-sort="original-order">
-    
+
           <!-- Portfolio Filters -->
-          <ul id="portfolio-filters" class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100"></ul>
-    
+          <ul id="portfolio-filters" class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          </ul>
+
           <!-- Portfolio Grid -->
-          <div class="portfolio-grid row" data-aos="fade-up" data-aos-delay="200" id="portfolio-grid"></div>
+          <div class="portfolio-grid row" data-aos="fade-up" data-aos-delay="200" id="portfolio-grid">
+
+          </div>
+
         </div>
       </div>
     </section>
   </main>
-
   <footer id="footer" class="footer dark-background">
 
     <div class="footer-top">
       <div class="container">
-        <div class="row  gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
+        <div class="row   gy-4">
+          <div class="col-lg-6 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
               <span class="sitename">Sai Wood Treats </span>
             </a>
@@ -137,29 +140,34 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about"> About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services"> Services</a></li>
+          <div class="d-flex  col-lg-6  my-sm-5 justify-content-lg-end footer-about">
+            <div class="col-md-3  mx-lg-5  footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Wood Furnitures</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Resistance</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html"> house wood furnitures</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html"> Hotels</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Costomized Woods</a></li>
+              </ul>
+            </div>
+            <div class=" col-md-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="index.html"> Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="index.html#about"> About us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html"> Services</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="portfolio-details.html"> Galary</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="WoodSupply.html"> Wood Supply</a></li>
 
-            </ul>
-          </div>
+              </ul>
+            </div>
 
-          <div class="col-lg-4 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Wood Furnitures</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Resistance</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html"> house wood furnitures</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html"> Hotels</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Costomized Woods</a></li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
+
 
     <div class="copyright">
       <div class="container text-center">
@@ -195,85 +203,57 @@
   <script src="assets/js/main.js"></script>
 
 
-  <script>
-  
-    const categories = [
-      { name: "All", filter: "*" },
-      { name: "House works", filter: "filter-app" },
-      { name: "Customized", filter: "filter-product" },
-      { name: "Plywood", filter: "filter-branding" },
-      { name: "Hotel and Apartments", filter: "filter-books" }
+  <script>const images = [
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app", title: "House Work 1" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product", title: "Customized Work 1" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding", title: "Plywood Work 1" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-books", title: "Hotel and Apartments 1" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app", title: "House Work 2" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product", title: "Customized Work 2" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding", title: "Plywood Work 2" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-books", title: "Hotel and Apartments 2" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app", title: "House Work 3" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product", title: "Customized Work 3" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding", title: "Plywood Work 3" },
+      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-books", title: "Hotel and Apartments 3" }
     ];
-  
-    const images = [
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-books" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-books" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-books" }
-    ];
-  
-    // Generate filters dynamically
-    const portfolioFilters = document.getElementById('portfolio-filters');
-    categories.forEach((cat, index) => {
-      const li = document.createElement('li');
-      li.textContent = cat.name;
-      li.setAttribute('data-filter', cat.filter);
-      if (index === 0) li.classList.add('filter-active'); // Set the first item as active
-      portfolioFilters.appendChild(li);
-    });
-  
+
     // Generate portfolio grid dynamically
     const portfolioGrid = document.getElementById('portfolio-grid');
+
     function renderImages(filter = "*") {
       portfolioGrid.innerHTML = ""; // Clear existing items
       images
         .filter(image => filter === "*" || image.category === filter)
         .forEach((image, index) => {
           const itemHTML = `
-            <div class="portfolio-item isotope-item ${image.category}">
-              <div class="portfolio-content h-100">
-                <img src="${image.src}" class="img-fluid" alt="Image ${index + 1}">
-                <div class="portfolio-info">
-                  <a href="${image.src}" data-gallery="portfolio-gallery-${image.category}" class="glightbox preview-link">
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-               
-                </div>
+          <div class="portfolio-item isotope-item ${image.category}">
+            <div class="portfolio-content h-100">
+              <img src="${image.src}" class="img-fluid" alt="Image ${index + 1}">
+              <div class="portfolio-info">
+                <a href="${image.src}" data-gallery="portfolio-gallery-${image.category}" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+                </a>
               </div>
             </div>
-          `;
+          </div>
+          <div class="">
+            <p class="image-title">${image.title}</p> 
+           </div>
+        `;
           portfolioGrid.innerHTML += itemHTML;
         });
-  
+
       // Reinitialize Glightbox for new images
       GLightbox({ selector: '.glightbox' });
     }
-  
+
     // Initial render for all images
     renderImages();
-  
-    // Filter functionality
-    const filterButtons = document.querySelectorAll('#portfolio-filters li');
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Remove active class from all buttons and add to the clicked one
-        filterButtons.forEach(btn => btn.classList.remove('filter-active'));
-        button.classList.add('filter-active');
-  
-        // Get the selected filter and render images
-        const filter = button.getAttribute('data-filter');
-        renderImages(filter);
-      });
-    });
+
   </script>
+
+  <!--    -->
 </body>
 
 </html>
