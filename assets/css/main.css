@@ -246,7 +246,10 @@ h6 {
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
+    /* background: #000; */
   }
+ 
+  
 
   .navmenu ul {
     margin: 0;
@@ -1257,50 +1260,125 @@ section,
   color: var(--background-color);
   border: 2px solid var(--accent-color);
 }
+.whatsapp{
+  place-self: center;
+}
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #00d757;
+}
+
+.sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 25px;
+}
+
+.sign svg path {
+  fill: white;
+}
+
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover {
+  width: 150px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 10px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+
+.Btn:active {
+  transform: translate(2px, 2px);
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 
-  /* Ensure items are displayed in rows */
-   .portfolio-grid { 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    
-  } 
+/* Ensure items are displayed in rows */
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 
+}
+
+.portfolio-item {
+  flex: 1 1 calc(25% - 15px);
+  /* 4 items per row with gap */
+  box-sizing: border-box;
+  position: relative;
+  /* Fixed height for div, you can adjust */
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+  /* Makes the image take full width of the container */
+  height: 100%;
+  /* Makes the image take full height of the container */
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
   .portfolio-item {
-    flex: 1 1 calc(25% - 15px); /* 4 items per row with gap */
-    box-sizing: border-box;
-    position: relative;
-     /* Fixed height for div, you can adjust */
-    overflow: hidden;
-   } 
-
-  .portfolio-item img {
-    width: 100%; /* Makes the image take full width of the container */
-    height: 100%; /* Makes the image take full height of the container */
-    object-fit: cover; 
+    flex: 1 1 calc(33.333% - 15px);
+    /* 3 items per row on tablets */
   }
+}
 
-  @media (max-width: 992px) {
-    .portfolio-item {
-      flex: 1 1 calc(33.333% - 15px); /* 3 items per row on tablets */
-    }
+@media (max-width: 768px) {
+  .portfolio-item {
+    flex: 1 1 calc(50% - 15px);
+    /* 2 items per row on mobile */
   }
+}
 
-  @media (max-width: 768px) {
-    .portfolio-item {
-      flex: 1 1 calc(50% - 15px); /* 2 items per row on mobile */
-    }
+@media (max-width: 576px) {
+  .portfolio-item {
+    flex: 1 1 100%;
+    /* 1 item per row on small screens */
   }
-
-  @media (max-width: 576px) {
-    .portfolio-item {
-      flex: 1 1 100%; /* 1 item per row on small screens */
-    }
-  }
+}
 
 .portfolio .portfolio-filters {
   padding: 0;
@@ -1356,7 +1434,7 @@ section,
 
 
 .portfolio .portfolio-content {
-  
+
   position: relative;
   overflow: hidden;
 }
@@ -1934,6 +2012,9 @@ button:hover .button-text {
   margin-right: 8px;
   color: var(--accent-color);
 }
+svg{
+  width: 50px;
+}
 
 .service-details .services-list a.active {
   color: var(--contrast-color);
@@ -1946,7 +2027,7 @@ button:hover .button-text {
 
 .service-details .services-list a:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
- cursor: pointer;
+  cursor: pointer;
 }
 
 .service-details .download-catalog a {
