@@ -248,8 +248,8 @@ h6 {
     padding: 0;
     /* background: #000; */
   }
- 
-  
+
+
 
   .navmenu ul {
     margin: 0;
@@ -783,8 +783,10 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   position: relative;
+  text-align: center;
+
 }
 
 .section-title h2 {
@@ -792,7 +794,6 @@ section,
   font-weight: 500;
   padding: 0;
   line-height: 1px;
-  margin: 0;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
@@ -801,11 +802,11 @@ section,
 
 .section-title h2::after {
   content: "";
-  width: 120px;
+  width: 100%;
   height: 1px;
   display: inline-block;
   background: var(--accent-color);
-  margin: 4px 10px;
+  margin: -10px 10px;
 }
 
 .section-title p {
@@ -1260,9 +1261,11 @@ section,
   color: var(--background-color);
   border: 2px solid var(--accent-color);
 }
-.whatsapp{
+
+.whatsapp {
   place-self: center;
 }
+
 .Btn {
   display: flex;
   align-items: center;
@@ -1533,6 +1536,7 @@ button {
 button.learn-more {
   width: 12rem;
   height: auto;
+
 }
 
 button.learn-more .circle {
@@ -1542,7 +1546,7 @@ button.learn-more .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #282936;
+  background: #ffc451;
   border-radius: 1.625rem;
 }
 
@@ -1830,11 +1834,9 @@ button:hover .button-text {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
-  margin-top: 40px;
-}
 
-.contact {
+
+#contact {
   margin-top: 70px;
 }
 
@@ -1948,6 +1950,35 @@ button:hover .button-text {
   padding: 0;
   font-size: 15px;
 }
+.portfolio-item {
+  position: relative;
+  text-align: center; /* Center text */
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-title {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px; /* Adds space between the image and the title */
+  text-align: center;
+  padding: 5px;
+}
+
+.portfolio-info {
+  padding-top: 10px;
+  text-align: center; /* Center the title */
+}
+
+.portfolio-item img {
+  display: block;
+  margin-bottom: 10px; /* Space between image and title */
+}
+
 
 .portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
@@ -2012,7 +2043,8 @@ button:hover .button-text {
   margin-right: 8px;
   color: var(--accent-color);
 }
-svg{
+
+svg {
   width: 50px;
 }
 
