@@ -36,10 +36,59 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    .card {
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-title {
+      color: #2c3e50;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .project-period {
+      background-color: #e3f2fd;
+      color: #1565c0;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .architect-info {
+      color: #64748b;
+      font-size: 0.813rem;
+      text-align: center;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 0.75rem;
+      margin-top: auto;
+    }
+
+    .card-text {
+      color: #475569;
+      font-size: 0.875rem;
+      line-height: 1.4;
+    }
+
+    .card-body {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
 </head>
 
 <body class="service-details-page">
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header container-fluid d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
@@ -136,7 +185,8 @@
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/services.jpg" alt="" class="services-img">
-            <h3>We provide a wide range of high-grade wood and Gypsum Board Works tailored to meet all your construction and
+            <h3>We provide a wide range of high-grade wood and Gypsum Board Works tailored to meet all your construction
+              and
               interior needs. </h3>
             <p>
               One-stop destination for top-quality wood supplies and professional interior solutions tailored to meet
@@ -181,30 +231,81 @@
               Transform your spaces with the best in wood supplies and interior solutions,today and let us make your
               dreams a reality!
             </p>
-            <div class="row p-5 d-flex justify-content-center gap-5 ">
-              <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                  <h5 class="card-title">Light card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+            <div class="container project-cards py-4">
+              <div class="row g-3 justify-content-center">
+                <!-- Kodai Kanal Card -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0">Kodai Kanal Tredis Banglow <span class="project-period">2017-May
+                            2023</span></h5>
+                      </div>
+                      <p class="card-text mb-3">
+                        Interior work, furniture, tiles, painting.<br>
+                        Trichy<br>
+                        Environmental Creations Thiruvananthapuram
+                      </p>
+                      <div class="architect-info">
+                        <strong>Architects:</strong><br>
+                        Mr TM Cyria<br>
+                        <strong>Client:</strong><br>
+                        Mrs Charubala Tondaiman
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Estuary Current Card -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0">Estuary</h5>
+                        <span class="project-period">2021-present</span>
+                      </div>
+                      <p class="card-text mb-3">
+                        Interior work for rooms, conference hall, garden villa, pool villa,
+                        restaurant furniture, tiles, gypsum board, painting and polishing.
+                      </p>
+                      <div class="architect-info">
+                        <strong>Architects:</strong><br>
+                        Mr. Vikram Ganesan<br>
+                        Shivadhara Architects Coimbatore
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Estuary Past Card -->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0">Estuary</h5>
+                        <span class="project-period">2018-2020</span>
+                      </div>
+                      <p class="card-text mb-3">
+                        Interior work for the new block, conference hall, mini-conference hall,
+                        restaurant furniture, tiles, gypsum board, painting.
+                      </p>
+                      <div class="architect-info">
+                        <strong>Architects:</strong><br>
+                        Mrs Monolita Chatterjee<br>
+                        DesignCombine , Cochin
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                  <h5 class="card-title">Light card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-              
             </div>
-            
+
+
           </div>
-          
         </div>
-      
       </div>
-   
     </section><!-- /Service Details Section -->
 
   </main>
