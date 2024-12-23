@@ -90,6 +90,16 @@
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
+let whatsappBtn = document.querySelector('.whatsapp-btn');
+
+function toggleWhatsAppBtn() {
+  if (whatsappBtn) {
+    window.scrollY > 100 ? whatsappBtn.classList.add('active') : whatsappBtn.classList.remove('active');
+  }
+}
+
+window.addEventListener('load', toggleWhatsAppBtn);
+document.addEventListener('scroll', toggleWhatsAppBtn);
 
   /**
    * Animation on scroll function and init

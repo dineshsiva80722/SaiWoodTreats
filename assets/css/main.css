@@ -704,6 +704,39 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+.whatsapp-btn {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 10px;
+  bottom: 60px;
+  z-index: 99999;
+  background-color: #25d366; /* WhatsApp green color */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-btn i {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 0;
+}
+
+.whatsapp-btn:hover {
+  background-color: color-mix(in srgb, #25d366, transparent 20%);
+  color: #ffffff;
+}
+
+.whatsapp-btn.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -881,6 +914,7 @@ section,
   padding: 20px;
 
 }
+
 
 .hero .kitchenworks {
   background-image: url('../img/saiwoods/kitchenworks.jpg');
@@ -1149,7 +1183,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  margin: 100px 0px;
+  margin: 0px 0px;
 }
 
 
@@ -1205,6 +1239,7 @@ section,
 .call-to-action {
   padding: 80px 0;
   position: relative;
+  margin-bottom: 100px;
   clip-path: inset(0);
 }
 
@@ -1266,6 +1301,11 @@ section,
   place-self: center;
 }
 
+.reacheamil .Btn {
+  background: #fff;
+
+}
+
 .Btn {
   display: flex;
   align-items: center;
@@ -1294,9 +1334,6 @@ section,
   width: 25px;
 }
 
-.sign svg path {
-  fill: white;
-}
 
 .text {
   position: absolute;
@@ -1512,7 +1549,7 @@ section,
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15pc;
+  height: 5pc;
   margin-top: 0px;
   z-index: 10;
 
@@ -1949,9 +1986,11 @@ button:hover .button-text {
   padding: 0;
   font-size: 15px;
 }
+
 .portfolio-item {
   position: relative;
-  text-align: center; /* Center text */
+  text-align: center;
+  /* Center text */
 }
 
 .portfolio-content {
@@ -1963,19 +2002,22 @@ button:hover .button-text {
 .image-title {
   font-size: 16px;
   color: #333;
-  margin-top: 10px; /* Adds space between the image and the title */
+  margin-top: 10px;
+  /* Adds space between the image and the title */
   text-align: center;
   padding: 5px;
 }
 
 .portfolio-info {
   padding-top: 10px;
-  text-align: center; /* Center the title */
+  text-align: center;
+  /* Center the title */
 }
 
 .portfolio-item img {
   display: block;
-  margin-bottom: 10px; /* Space between image and title */
+  margin-bottom: 10px;
+  /* Space between image and title */
 }
 
 
