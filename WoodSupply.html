@@ -2,40 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Starter Page - Gp Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
 
-  <!-- =======================================================
-  * Template Name: Gp
-  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-  * Updated: Aug 15 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+
 
   <style>
     .container {
@@ -99,16 +91,24 @@
 
     /* Services grid */
     .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      display: flex;
+      place-content: center;
+      gap: 32px;
+    }
+
+    .services-treated-grid {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
       gap: 32px;
     }
 
     /* Service cards */
     .service-card {
       background: white;
-      border-radius: 8px;
-      padding: 32px;
+      border-radius: 10px;
+      padding: 3px;
+      width: 20pc;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
     }
@@ -157,6 +157,33 @@
     .service-card p {
       color: #6b7280;
     }
+
+    .service-treated-card {
+      background-color: white;
+      /* padding: 10px 10px 10px 10px; */
+      border-radius: 10px;
+      padding: 3px;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .service-treated-card p{
+      text-align: justify;
+    }
+
+    .service-treated-card:hover {
+      box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.1);
+      transform: scale(1.05);
+
+    }
+    .service-treated-card h3{
+      text-align: center;
+
+    }
+
+    /* Responsive design */
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2.5rem;
@@ -170,6 +197,7 @@
         grid-template-columns: 1fr;
       }
     }
+   
   </style>
 </head>
 
@@ -179,21 +207,26 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h2 class="sitename fs-1 fs-md-2 fs-lg-3">Sai Wood Treats</h2>
-        <span class=" d-none d-lg-block">.</span>
+        <h2 class="sitename">Sai Wood Treats</h2>
+        <span>.</span>
       </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" >Home<br></a></li>
+          <li>
+            <a href="index.html">Home<br /></a>
+          </li>
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#Galary">Galary</a></li>
-          <!-- <li><a href="#clients">Clients</a></li> -->
-          <li><a href="WoodSupply.html" class="active ">Wood Supply</a></li>
+
+          <li><a href="starter-page.html" class="active">Wood Supply</a></li>
+
           <li><a href="Contect.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
       <a class="btn-getstarted" href="service-details.html">Get Started</a>
     </div>
   </header>
@@ -207,99 +240,172 @@
             <div class="col-lg-8">
               <h1>Wood Supply</h1>
               <p class="mb-0">
-                Sai Wood Treats offers a wide range of high-quality wood supplies tailored to meet the needs of various
-                projects. We provide both normal and treated wood, ensuring durability and reliability for construction,
-                furniture, and interior works. With customizable wood sizes, we guarantee precise dimensions to match
-                your specific requirements.</p>
+                Sai Wood Treats offers a wide range of high-quality wood
+                supplies tailored to meet the needs of various projects. We
+                provide both normal and treated wood, ensuring durability and
+                reliability for construction, furniture, and interior works.
+                With customizable wood sizes, we guarantee precise dimensions
+                to match your specific requirements.
+              </p>
             </div>
           </div>
         </div>
       </div>
+
     </div>
 
     <section id="starter-section" class="starter-section section">
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Check Starter Section<br></p>
-      </div><!-- End Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+          <h2>Starter Section</h2>
+          <p>Check Starter Section<br /></p>
+        </div> -->
+      <!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
-      </div>
-    </section><!-- /Starter Section Section -->
-
+      <!-- <div class="container" data-aos="fade-up">
+          <p>Use this page as a starter for your own custom pages.</p>
+        </div> -->
+    </section>
 
 
     <main class="container">
       <!-- Normal Wood Section -->
-      <section class="services-section">
-        <div class="section-header">
-          <h2>NORMAL WOOD SUPPLY</h2>
-          <p>Premium quality raw wood for furniture, construction, and interior design</p>
-          <div class="accent-line amber"></div>
-        </div>
+      <section class="services-section py-5">
+        <div class="container">
+          <div class="section-header text-center mb-4">
+            <h2>NORMAL WOOD SUPPLY</h2>
+            <p>Premium quality raw wood for furniture, construction, and interior design</p>
+            <div class="accent-line amber mx-auto" style="width: 50px; height: 4px;"></div>
+          </div>
 
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="icon-container amber">
-              <img src="https://api.iconify.design/lucide:home.svg" alt="Furniture">
+          <div class="services-grid  row ">
+            <div class="service-card col-md-4 mb-4">
+              <div class="icon-container amber">
+                <img src="https://api.iconify.design/lucide:home.svg" alt="Furniture" />
+              </div>
+              <h3>Furniture</h3>
+              <p>
+                Premium wood for tables, chairs, beds, and wardrobes. We offer
+                Sheesham, teak, and mango wood, popular choices known for their
+                stunning aesthetics and natural beauty.
+              </p>
             </div>
-            <h3>Furniture</h3>
-            <p>Premium wood for tables, chairs, beds, and wardrobes. We offer Sheesham, teak, and mango wood,
-              popular choices known for their stunning aesthetics and natural beauty.</p>
-          </div>
-          <div class="service-card">
-            <div class="icon-container amber">
-              <img src="https://api.iconify.design/lucide:box.svg" alt="Construction">
+
+            <div class="service-card col-md-4 mb-4">
+              <div class="icon-container amber">
+                <img src="https://api.iconify.design/lucide:box.svg" alt="Construction" />
+              </div>
+              <h3>Construction</h3>
+              <p>
+                High-quality wooden beams, columns, and flooring for traditional
+                architecture. We provide Sal and teak wood, renowned for their
+                exceptional strength and durability.
+              </p>
             </div>
-            <h3>Construction</h3>
-            <p>We craft custom kitchens with durable plywood cabinets, elegant MDF countertops, and
-              exquisite tiles, granite, and marble work. We also offer high-quality Sal and teak wood beams and
-              flooring, perfect for adding strength and beauty to traditional architecture.</p>
-          </div>
-          <div class="service-card">
-            <div class="icon-container amber">
-              <img src="https://api.iconify.design/lucide:monitor.svg" alt="Interior Design">
+
+            <div class="service-card col-md-4 mb-4">
+              <div class="icon-container amber">
+                <img src="https://api.iconify.design/lucide:monitor.svg" alt="Interior Design" />
+              </div>
+              <h3>Interior Design</h3>
+              <p>
+                Elegant wood solutions for paneling, flooring, and decorative
+                elements. Our hardwoods like teak and oak are perfect for
+                creating sophisticated interior spaces.
+              </p>
             </div>
-            <h3>Interior Design</h3>
-            <p>Elegant wood solutions for paneling, flooring, and decorative elements. Our hardwoods like teak
-              and oak are perfect for creating sophisticated interior spaces.</p>
           </div>
         </div>
       </section>
-
       <!-- Treated Wood Section -->
       <section class="services-section">
         <div class="section-header">
           <h2>TREATED WOOD SUPPLY</h2>
-          <p>Chemically modified wood for enhanced durability and specific applications</p>
+          <p>
+            Chemically modified wood for enhanced durability and specific
+            applications
+          </p>
           <div class="accent-line green"></div>
         </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="icon-container green">
-              <img src="https://api.iconify.design/lucide:shield.svg" alt="Outdoor">
+
+        <div class="services-treated-grid container p-3">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-12 my-2 service-treated-card p-5">
+              <div class="icon-container green">
+                <img src="https://api.iconify.design/lucide:shield.svg" alt="Outdoor" />
+              </div>
+              <h3 class="h5 h-md4 h-lg3">Stage 1: Harvesting and Cutting</h3>
+              <p class="small small-md">Wood is harvested from mature trees that are deemed suitable for
+                timber production. Once felled, the raw wood is transported
+                immediately to the processing facility to minimize exposure to
+                bacteria and fungi, which could compromise its integrity.
+              </p>
             </div>
-            <h3>Outdoor Applications</h3>
-            <p>Weather-resistant treated wood perfect for decking, fencing, pergolas, and gazebos. Our treated
-              wood ensures long-lasting durability in outdoor environments.</p>
-          </div>
-          <div class="service-card">
-            <div class="icon-container green">
-              <img src="https://api.iconify.design/lucide:droplets.svg" alt="Marine">
+
+            <div class="col-12 col-md-6 col-lg-12 my-2 service-treated-card p-5">
+              <div class="icon-container green">
+                <img src="https://api.iconify.design/lucide:droplets.svg" alt="Marine" />
+              </div>
+              <h3 class="h5 h-md4 h-lg3">Stage 2: Pressurized Preservation Treatment</h3>
+              <p class="small small-md">Pressurized Preservation Treatment At the factory, raw wood is
+                treated with a preservation liquid chemical compound to protect
+                it from decay and termite infestation. This process is conducted
+                in a vacuum-sealed pressure chamber, where the wood is soaked
+                and injected with the preservative. The pressure is gradually
+                increased to 5–10 kg/m³ and maintained for approximately 20
+                minutes to ensure thorough absorption.
+              </p>
             </div>
-            <h3>Marine Applications</h3>
-            <p>Specially treated wood for docks, piers, and boat construction. Enhanced with protection against
-              water damage and decay for maritime environments.</p>
-          </div>
-          <div class="service-card">
-            <div class="icon-container green">
-              <img src="https://api.iconify.design/lucide:building.svg" alt="Industrial">
+
+            <div class="col-12 col-md-6 col-lg-12 my-2 service-treated-card p-5">
+              <div class="icon-container green">
+                <img src="https://api.iconify.design/lucide:building.svg" alt="Industrial" />
+              </div>
+              <h3 class="h5 h-md4 h-lg3">Stage 3: Kiln Drying</h3>
+              <p class="small small-md">The treated wood is dried in a kiln to remove excess moisture
+                and achieve a consistent moisture content. This step improves
+                the wood’s durability, prevents surface cracking and splitting,
+                and reduces its overall weight, making it more cost-effective to
+                transport.
+              </p>
             </div>
-            <h3>Industrial Use</h3>
-            <p>Pressure-treated wood for structural elements, scaffolding, and industrial applications.
-              Guaranteed protection against infestation during transportation and use.</p>
+
+            <div class="col-12 col-md-6 col-lg-12 my-2 service-treated-card p-5">
+              <div class="icon-container green">
+                <img src="https://api.iconify.design/lucide:building.svg" alt="Industrial" />
+              </div>
+              <h3 class="h5 h-md4 h-lg3">Stage 4: Quality Control Inspection</h3>
+              <p class="small small-md">After drying, each piece of wood undergoes a meticulous quality
+                control inspection to identify and address any flaws. The wood
+                is then resized, sorted, and classified according to industry
+                standards by qualified personnel, ensuring only high-quality
+                material proceeds to the next stage.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-12 my-2 service-treated-card p-5">
+              <div class="icon-container green">
+                <img src="https://api.iconify.design/lucide:building.svg" alt="Industrial" />
+              </div>
+              <h3 class="h5 h-md4 h-lg3">Stage 5: Packaging</h3>
+              <p class="small small-md">The inspected wood is neatly stacked in cubic meter bundles and
+                securely wrapped in waterproof material. This packaging protects
+                the wood from water seepage, staining, and other environmental
+                factors during storage and transit.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-12 my-2 service-treated-card p-5">
+              <div class="icon-container green">
+                <img src="https://api.iconify.design/lucide:building.svg" alt="Industrial" />
+              </div>
+              <h3 class="h5 h-md4 h-lg3">Stage 6: Fumigation and Shipping</h3>
+              <p class="small small-md">Before shipping, the packaged wood is fumigated as required by
+                the relevant agricultural authorities. This step ensures the
+                wood is free from bacteria and fungal infections, making it safe and compliant with international
+                shipping regulations.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -309,68 +415,99 @@
   <footer id="footer" class="footer dark-background">
     <div class="footer-top">
       <div class="container">
-        <div class="row   gy-4">
+        <div class="row gy-4">
           <div class="col-lg-6 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
               <span class="sitename">Sai Wood Treats </span>
             </a>
             <div class="footer-contact pt-3">
-              <p>21/75-9,Sastha Nagar</p>
-              <p>Kollamcode , Tamil Nadu</p>
+              <p>Kakkavilai 9-32/9</p>
+              <p>Chatrakkavu , Kollamcode , Tamil Nadu</p>
               <p>Pincode :629160</p>
-              <p>GSTIN Number: 33AIIPA6764B1ZO </p>
-              <p class="mt-3"> <a href="https://wa.me/+919447005258"><strong>Phone:</strong><span>+91
-                    9447005258</span></a></p>
-              <p><a href="mailto:saiwoodtreats@gmail.com"> <strong>Email:</strong> <span>saiwoodtreats@gmail.com
-                  </span></a></p>
+              <p class="mt-3">
+                <strong>Phone:</strong> <span>+91 9447005258</span>
+              </p>
+              <p>
+                <strong>Email:</strong> <span>saiwoodtreats@gmail.com </span>
+              </p>
             </div>
             <div class="social-links d-flex mt-4">
-              <a
-                href="https://www.instagram.com/saiwoodtreats?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                  class="bi bi-instagram"></i></a>
+              <a><i class="bi bi-twitter-x"></i></a>
+              <a><i class="bi bi-facebook"></i></a>
+              <a><i class="bi bi-instagram"></i></a>
+              <a><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
-          <div class="d-flex  col-lg-6  my-sm-5 justify-content-lg-end footer-about">
-            <div class="col-md-3  mx-lg-5  footer-links">
+
+          <div class="d-flex col-lg-6 my-sm-5 justify-content-lg-end footer-about">
+            <div class="col-md-3 mx-lg-5 footer-links">
               <h4>Our Services</h4>
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Wood Furnitures</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Resistance</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html"> house wood furnitures</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html"> Hotels</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Costomized Woods</a></li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="service-details.html">Wood Furnitures</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="service-details.html">Resistance</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="service-details.html"> house wood furnitures</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="service-details.html"> Hotels</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="service-details.html">Costomized Woods</a>
+                </li>
               </ul>
             </div>
-            <div class=" col-md-3 footer-links">
+            <div class="col-md-3 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="index.html"> Home</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="index.html#about"> About us</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="service-details.html"> Services</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="portfolio-details.html"> Galary</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="WoodSupply.html"> Wood Supply</a></li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="index.html"> Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="index.html#about"> About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="service-details.html"> Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="portfolio-details.html"> Galary</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="WoodSupply.html"> Wood Supply</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="copyright">
       <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sai Wood Treats </strong> <span>All Rights
-            Reserved</span></p>
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">Sai Wood Treats </strong>
+          <span>All Rights Reserved</span>
+        </p>
         <div class="credits">
           Designed by <a href="https://innotechtitans.in/">Innotech Titans</a>
         </div>
       </div>
     </div>
   </footer>
-
-<!-- whatsapp button -->
-  <a href="https://wa.me/+919447005258" id="whatsapp-btn"
-    class="whatsapp-btn d-flex align-items-center justify-content-center" target="_blank">
-    <i class="bi bi-whatsapp"></i>
-  </a>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -390,7 +527,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
