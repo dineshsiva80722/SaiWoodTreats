@@ -272,10 +272,10 @@ Transform your spaces with the best in wood supplies and interior solutions,toda
                 </div>
               </div>
             </div> -->
-            <div style="padding: 2rem; max-width: 1200px; margin: auto; font-family: 'Arial', sans-serif; background: #f9f9f9;">
-              <div style="display: flex; gap: 2rem; justify-content: center;">
+            <div style="padding: 2rem; max-width: 1200px; margin: auto; font-family: 'Arial', sans-serif; ">
+              <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
                 <!-- Kodai Kanal Card -->
-                <div style="flex: 1 1 300px; max-width: 300px; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <div style="flex: 1 1 100%; max-width: 100%; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                   <div style="padding: 1.5rem;">
                     <h3 style="margin: 0; font-size: 1.25rem; font-weight: bold; color: #333;">Kodai Kanal Tredis Banglow</h3>
                     <span style="display: block; margin-top: 0.5rem; font-size: 0.9rem; color: #888;">2017 - 2023</span>
@@ -291,7 +291,7 @@ Transform your spaces with the best in wood supplies and interior solutions,toda
                   </div>
                 </div>
                 <!-- Estuary Current Card -->
-                <div style="flex: 1 1 300px; max-width: 300px; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <div style="flex: 1 1 100%; max-width: 100%; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                   <div style="padding: 1.5rem;">
                     <h3 style="margin: 0; font-size: 1.25rem; font-weight: bold; color: #333;">Estuary</h3>
                     <span style="display: block; margin-top: 0.5rem; font-size: 0.9rem; color: #888;">2021 - present</span>
@@ -305,7 +305,7 @@ Transform your spaces with the best in wood supplies and interior solutions,toda
                   </div>
                 </div>
                 <!-- Estuary Past Card -->
-                <div style="flex: 1 1 300px; max-width: 300px; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <div style="flex: 1 1 100%; max-width: 100%; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                   <div style="padding: 1.5rem;">
                     <h3 style="margin: 0; font-size: 1.25rem; font-weight: bold; color: #333;">Estuary</h3>
                     <span style="display: block; margin-top: 0.5rem; font-size: 0.9rem; color: #888;">2018 - 2020</span>
@@ -320,6 +320,30 @@ Transform your spaces with the best in wood supplies and interior solutions,toda
                 </div>
               </div>
             </div>
+            
+            <style>
+              @media (max-width: 768px) {
+                div[style*="flex: 1 1"] {
+                  flex: 1 1 100%;
+                  max-width: 100%;
+                }
+                div[style*="padding: 2rem"] {
+                  padding: 1rem;
+                }
+              }
+            
+              @media (max-width: 480px) {
+                div[style*="padding: 1.5rem"] {
+                  padding: 1rem;
+                }
+                h3 {
+                  font-size: 1.1rem;
+                }
+                p {
+                  font-size: 0.9rem;
+                }
+              }
+            </style>
             
           </div>
           
