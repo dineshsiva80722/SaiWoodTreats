@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -72,19 +73,21 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero"  >Home<br></a></li>
+          <li><a href="index.html#hero">Home<br></a></li>
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#Galary" class="active">Galary</a></li>
           <!-- <li><a href="#clients">Clients</a></li> -->
           <li><a href="WoodSupply.html">Wood Supply</a></li>
           <li><a href="Contect.html">Contact</a></li>
-          <a  class="btn-getstarted mx-3 tab-view d-flex  justify-content-center  d-lg-none  gap-2 align-items-center  px-5 py-2  rounded bg-success" href="https://wa.me/+919447005258"  target="_blank"> </i>
+          <a class="btn-getstarted mx-3 tab-view d-flex  justify-content-center  d-lg-none  gap-2 align-items-center  px-5 py-2  rounded bg-success"
+            href="https://wa.me/+919447005258" target="_blank"> </i>
             Whatsapp</a>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a class="btn-getstarted d-none d-lg-flex d-flex justify-content-between gap-2 align-items-center  px-4 py-2 rounded bg-success" href="https://wa.me/+919447005258"  target="_blank">  <i class="bi bi-whatsapp"></i>
+      <a class="btn-getstarted d-none d-lg-flex d-flex justify-content-between gap-2 align-items-center  px-4 py-2 rounded bg-success"
+        href="https://wa.me/+919447005258" target="_blank"> <i class="bi bi-whatsapp"></i>
         Whatsapp</a>
     </div>
   </header>
@@ -217,18 +220,42 @@
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script>
     const images = [
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app", title: "House Work 1" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product", title: "Customized Work 1" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding", title: "Construction 1" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-books", title: "Hotel and Apartments 1" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app", title: "House Work 2" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product", title: "Customized Work 2" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding", title: "Construction 2" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-books", title: "Hotel and Apartments 2" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app", title: "House Work 3" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product", title: "Customized Work 3" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding", title: "Construction 3" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-books", title: "Hotel and Apartments 3" }
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/hongmx4gpqkwlfxbyqsl", category: "filter-app", title: "House Work 1" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Customized%20work/kte0ry9xnkeyz8c327nl", category: "filter-product", title: "Customized Work 1" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/n20par288bmcigjhltuq", category: "filter-branding", title: "Construction 1" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Resort-Hotel/g1wxoysqrrfkzcswqagi", category: "filter-books", title: "Hotel and Apartments 1" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/l55libxhzcjhedqocegn", category: "filter-app", title: "House Work 2" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Customized%20work/opec4ge9ip2bqwvxlhak", category: "filter-product", title: "Customized Work 2" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/npkogljfnfm1qtxs2w6z", category: "filter-branding", title: "Construction 2" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Resort-Hotel/cjfrqafkttjokakprn3o", category: "filter-books", title: "Hotel and Apartments 2" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/g3b8gtkcwiq0ggaksthf", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/g8inomrpqqopvdh3wnhv", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/cnekfgkxl5ixguulau4j", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/wz918vfvhh7ubtfgy1ur", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/n16ecnbkttattedrmmzb", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/ummrydk9i2945rxgefak", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/xtxduvvfb7qhcc3eam8y", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/wceccqn54xb9j9bifyff", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/ugnqcm0nnwv2v77xjzfi", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/a1j6d9udx35bki7cynpa", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/za3qjd5hcep4nrxniwyu", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Customized%20work/xlur24yn6ufazrtyrhpg", category: "filter-product", title: "Customized Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Customized%20work/epz8qlc4oi17u9wsgevb", category: "filter-product", title: "Customized Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Customized%20work/tr1nxea5uumoy3bnd0sb", category: "filter-product", title: "Customized Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/npkogljfnfm1qtxs2w6z", category: "filter-branding", title: "Construction 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/kcyjtjm4fnkeio5hcxbo", category: "filter-branding", title: "Construction 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/amytdnxszssfjux2y7om", category: "filter-branding", title: "Construction 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/zx0bfrxo37lgfxdoclco", category: "filter-branding", title: "Construction 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/xhvubrqxumqvgnyaq6cc", category: "filter-branding", title: "Construction 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/uop70po74czmj1rx8v9j", category: "filter-branding", title: "Construction 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/wcnyhyp4gckr5zcbsxod", category: "filter-branding", title: "Construction 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/trmktxjduut27htssloo", category: "filter-branding", title: "Construction 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Resort-Hotel/zwyasldu3sbfezbejrma", category: "filter-books", title: "Hotel and Apartments 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Resort-Hotel/arm6yfumjo6jm6qmef5a", category: "filter-books", title: "Hotel and Apartments 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Resort-Hotel/wfd1ys7tv6o6ven3nnws", category: "filter-books", title: "Hotel and Apartments 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Resort-Hotel/jhorqa3d95lsxwsxcnav", category: "filter-books", title: "Hotel and Apartments 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Resort-Hotel/gp0mtqn8bajbqyxzprb9", category: "filter-books", title: "Hotel and Apartments 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Resort-Hotel/kolw2tkfcbndm9nqqgpj", category: "filter-books", title: "Hotel and Apartments 3" },
     ];
 
     // Generate portfolio grid dynamically
