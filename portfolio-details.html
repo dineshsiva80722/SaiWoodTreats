@@ -217,18 +217,19 @@
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script>
     const images = [
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app", title: "House Work 1" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product", title: "Customized Work 1" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding", title: "Construction 1" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-books", title: "Hotel and Apartments 1" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app", title: "House Work 2" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product", title: "Customized Work 2" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding", title: "Construction 2" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-books", title: "Hotel and Apartments 2" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_114315450.jpg", category: "filter-app", title: "House Work 3" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-product", title: "Customized Work 3" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_115123381.jpg", category: "filter-branding", title: "Construction 3" },
-      { src: "assets/img/saiwoods/Galary/PXL_20241203_111807496.jpg", category: "filter-books", title: "Hotel and Apartments 3" }
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/uifxyqqulg86nf3jvztb", category: "filter-app", title: "House Work 1" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/npkogljfnfm1qtxs2w6z", category: "filter-product", title: "Customized Work 1" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/n20par288bmcigjhltuq", category: "filter-branding", title: "Construction 1" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/kcyjtjm4fnkeio5hcxbo", category: "filter-books", title: "Hotel and Apartments 1" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/amytdnxszssfjux2y7om", category: "filter-app", title: "House Work 2" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/zx0bfrxo37lgfxdoclco", category: "filter-branding", title: "Construction 2" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/uop70po74czmj1rx8v9j", category: "filter-app", title: "House Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/wcnyhyp4gckr5zcbsxod", category: "filter-product", title: "Customized Work 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/trmktxjduut27htssloo", category: "filter-branding", title: "Construction 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/uifxyqqulg86nf3jvztb", category: "filter-books", title: "Hotel and Apartments 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/uifxyqqulg86nf3jvztb", category: "filter-books", title: "Hotel and Apartments 3" },
+      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/uifxyqqulg86nf3jvztb", category: "filter-books", title: "Hotel and Apartments 3" },
+      // { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Customized%20work/kte0ry9xnkeyz8c327nl", category: "filter-books", title: "Hotel and Apartments 3" },
     ];
 
     // Generate portfolio grid dynamically
@@ -245,7 +246,7 @@
                           <div class="card-body">
                               <p class="card-text">${image.title}</p>
                               <a href="${image.src}" data-gallery="portfolio-gallery-${image.category}" class="glightbox preview-link">
-                                  <i class="bi bi-zoom-in"></i> View
+                                  <i class=""></i> View
                               </a>
                           </div>
                       </div>
