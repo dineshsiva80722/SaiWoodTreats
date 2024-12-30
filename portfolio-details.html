@@ -12,11 +12,6 @@
       overflow: hidden;
     }
 
-    img:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
-
     .portfolio-filters {
       display: flex;
       flex-wrap: wrap;
@@ -31,6 +26,10 @@
       cursor: pointer;
       border: 1px solid transparent;
       transition: border-color 0.3s;
+    }
+    .viewbtn{
+      cursor: pointer;
+      color: coral;
     }
   </style>
   <!-- Favicons -->
@@ -60,6 +59,12 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .glightbox {
+
+      object-fit: contain !important;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -151,7 +156,7 @@
             <div class="social-links d-flex mt-4">
               <a
                 href="https://www.instagram.com/saiwoodtreats?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                  class="bi bi-instagram"></i></a>
+                  class="bi bi-instagram "></i></a>
             </div>
           </div>
           <div class="d-flex  col-lg-6  justify-content-md-center my-sm-5 justify-content-lg-end footer-about">
@@ -182,7 +187,7 @@
 
     <div class="copyright">
       <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sai Wood Treats </strong> <span>All Rights
+        <p> <span>Copyright</span> <strong class="px-1 sitename">Sai Wood Treats </strong> <span>All Rights
             Reserved</span></p>
         <div class="credits">
           Designed by <a href="https://innotechtitans.in/">Innotech Titans</a>
@@ -217,7 +222,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script> -->
   <script>
     const images = [
       { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/hongmx4gpqkwlfxbyqsl", category: "filter-app", title: "House Work 1" },
@@ -238,10 +243,10 @@
       { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/wceccqn54xb9j9bifyff", category: "filter-app", title: "House Work 3" },
       { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/ugnqcm0nnwv2v77xjzfi", category: "filter-app", title: "House Work 3" },
       { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/a1j6d9udx35bki7cynpa", category: "filter-app", title: "House Work 3" },
-      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/za3qjd5hcep4nrxniwyu", category: "filter-app", title: "House Work 3" },
+      // { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/House%20work/za3qjd5hcep4nrxniwyu", category: "filter-app", title: "House Work 3" },
       { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Customized%20work/xlur24yn6ufazrtyrhpg", category: "filter-product", title: "Customized Work 3" },
       { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Customized%20work/epz8qlc4oi17u9wsgevb", category: "filter-product", title: "Customized Work 3" },
-      { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Customized%20work/tr1nxea5uumoy3bnd0sb", category: "filter-product", title: "Customized Work 3" },
+      // { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Customized%20work/tr1nxea5uumoy3bnd0sb", category: "filter-product", title: "Customized Work 3" },
       { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/npkogljfnfm1qtxs2w6z", category: "filter-branding", title: "Construction 3" },
       { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/kcyjtjm4fnkeio5hcxbo", category: "filter-branding", title: "Construction 3" },
       { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Construction%20work/amytdnxszssfjux2y7om", category: "filter-branding", title: "Construction 3" },
@@ -258,32 +263,36 @@
       { src: "https://res.cloudinary.com/dcuiulfdt/image/upload/f_auto,q_auto/v1/Resort-Hotel/kolw2tkfcbndm9nqqgpj", category: "filter-books", title: "Hotel and Apartments 3" },
     ];
 
+
     // Generate portfolio grid dynamically
     const portfolioGrid = document.getElementById('portfolio-grid');
     function renderImages(filter = "*") {
-      portfolioGrid.innerHTML = ""; // Clear existing items
+      // <a href="${image.src}" data-gallery="portfolio-gallery-${image.category}" class="glightbox preview-link">
+      // Clear existing items  <i class="bi bi-zoom-in"></i> View 
+      portfolioGrid.innerHTML = "";
       images
         .filter(image => filter === "*" || image.category === filter.replace('.', '')) // Adjusted to match category
         .forEach((image, index) => {
           const itemHTML = `
-                  <div class="col-md-4 portfolio-item ${image.category}">
-                      <div class="card" style=" width: 100%;">
-                          <img class="card-img-top" src="${image.src}" alt="Image ${index + 1}">
-                          <div class="card-body">
-                              <p class="card-text">${image.title}</p>
-                              <a href="${image.src}" data-gallery="portfolio-gallery-${image.category}" class="glightbox preview-link">
-                                  <i class="bi bi-zoom-in"></i> View
-                              </a>
-                          </div>
-                      </div>
-                  </div>
+            <div class="col-md-4 portfolio-item ${image.category}">
+              <div class="card" style="width: 100%; height: 100%;">
+                <img class="card-img-top" src="${image.src}" alt="Image ${index + 1}">
+                <div class="card-body">
+                  <p class="card-text">${image.title}</p>
+                  <button class="viewbtn w-100" onclick="openImageViewer('${image.src}', ${index})">
+                    <i class="bi bi-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
                   `;
           portfolioGrid.innerHTML += itemHTML;
         });
-      // Reinitialize Glightbox for new images
-      GLightbox({ selector: '.glightbox' });
+
     }
+
     // Initial render for all images
+
     renderImages();
     // Filter functionality
     const filters = document.querySelectorAll('#portfolio-filters li');
@@ -294,6 +303,66 @@
         filters.forEach(f => f.classList.remove('filter-active'));
         this.classList.add('filter-active');
       });
+    });
+
+    // Image viewer modal
+    const modal = document.createElement('div');
+    modal.innerHTML = `
+      <div id="imageViewerModal" class="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 9999;">
+        <span class="close" style="position: absolute; right: 25px; top: 15px; color: #fff; font-size: 35px; cursor: pointer;">&times;</span>
+        <a class="prev" style="position: absolute; left: 25px; top: 50%; color: #fff; font-size: 35px; cursor: pointer; transform: translateY(-50%);">&#10094;</a>
+        <a class="next" style="position: absolute; right: 25px; top: 50%; color: #fff; font-size: 35px; cursor: pointer; transform: translateY(-50%);">&#10095;</a>
+        <img id="modalImage" style="max-width: 90%; max-height: 90vh; margin: auto; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      </div>
+    `;
+    document.body.appendChild(modal);
+
+    let currentImageIndex = 0;
+    
+    function openImageViewer(src, index) {
+      const modal = document.getElementById('imageViewerModal');
+      const modalImg = document.getElementById('modalImage');
+      currentImageIndex = index;
+      modalImg.src = src;
+      modal.style.display = "block";
+    }
+
+    // Close button
+    document.querySelector('.close').onclick = function() {
+      document.getElementById('imageViewerModal').style.display = "none";
+    }
+
+    // Click outside to close
+    document.getElementById('imageViewerModal').onclick = function(e) {
+      if (e.target === this) {
+        this.style.display = "none";
+      }
+    }
+
+    // Previous button
+    document.querySelector('.prev').onclick = function() {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      document.getElementById('modalImage').src = images[currentImageIndex].src;
+    }
+
+    // Next button
+    document.querySelector('.next').onclick = function() {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      document.getElementById('modalImage').src = images[currentImageIndex].src;
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      const modal = document.getElementById('imageViewerModal');
+      if (modal.style.display === "block") {
+        if (e.key === "ArrowLeft") {
+          document.querySelector('.prev').click();
+        } else if (e.key === "ArrowRight") {
+          document.querySelector('.next').click();
+        } else if (e.key === "Escape") {
+          modal.style.display = "none";
+        }
+      }
     });
   </script>
 </body>
